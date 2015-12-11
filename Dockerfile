@@ -13,15 +13,15 @@ MAINTAINER Dennis Oosterkamp <DOosterkamp@Clevir.nl>
 
 # Version info
 ENV \
-    GUAC_VERSION=0.9.7      \
-    CLEVIR_VERSION=0.9.7.7251
+    GUAC_VERSION=0.9.8      \
+    CLEVIR_VERSION=0.9.8.7334
 
 #
 # Download guacamole.war, placing in specified destination
 #
 
 RUN echo "Downloading Clevir client version $CLEVIR_VERSION to /usr/local/tomcat/webapps ..."
-RUN curl -L "http://sourceforge.net/projects/guacamole/files/current/binary/guacamole-${CLEVIR_VERSION}.war" > "/usr/local/tomcat/webapps/hcp.war"
+RUN curl -L "http://sourceforge.net/projects/clevir/files/ch5interface-${CLEVIR_VERSION}.war" > "/usr/local/tomcat/webapps/hcp.war"
 
 # Start the client under Tomcat, listening on 0.0.0.0:8080
 EXPOSE 8080
