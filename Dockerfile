@@ -13,8 +13,8 @@ MAINTAINER Dennis Oosterkamp <DOosterkamp@Clevir.nl>
 
 # Version info
 ENV \
-    GUAC_VERSION=0.9.8      \
-    CLEVIR_VERSION=0.9.8.7334
+    GUAC_VERSION=0.9.9      \
+    CLEVIR_VERSION=0.9.9.8018
 
 #
 # Download guacamole.war, placing in specified destination
